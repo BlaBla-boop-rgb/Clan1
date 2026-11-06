@@ -1,0 +1,45 @@
+# Texte nutzen MiniMessage: https://docs.advntr.dev/minimessage/format.html
+
+prefix: "<dark_gray>[<gold>Clan<dark_gray>]<gray> "
+no-clan-name: "kein Clan"
+no-clan-tab: "<dark_gray>[<gray>kein Clan<dark_gray>]"
+
+# Clan-Tag in der Tabliste
+tab-list-name: true
+# <player> = Spielername
+tab-base: "<white><player>"
+
+min-length: 3
+max-length: 10
+# 0 = unbegrenzt
+max-members: 20
+# Einladungen verfallen nach X Sekunden
+invite-expire-seconds: 120
+
+# Nur der Leiter darf die Farbe ändern
+color-needs-leader: true
+# Permission für Clan-Farben
+vip-permission: "vip.booster"
+
+gui:
+  animation: true
+  # Ticks pro Animations-Frame (2 = flüssig, 4 = sparsamer)
+  animation-speed: 2
+  sounds: true
+
+# Resource Pack mit den Custom-Icons
+resource-pack:
+  # auto   = Custom-Icons nur für Spieler, die das Pack geladen haben (sonst normale Items)
+  # always = immer Custom-Icons (z.B. wenn du das Pack selbst über server.properties verteilst)
+  # never  = nie Custom-Icons
+  mode: auto
+  send-on-join: true
+  required: false
+  # Öffentlicher Download-Link zur ClansPack.zip (z.B. GitHub-Release, eigener Webspace).
+  # Die Datei findest du nach dem ersten Start unter plugins/Clans/ClansPack.zip
+  url: ""
+  # Alternative: das Plugin hostet die Datei selbst (Port muss von außen erreichbar sein)
+  builtin-host:
+    enabled: false
+    address: ""   # öffentliche IP oder Domain deines Servers
+    port: 8130

@@ -1,0 +1,18 @@
+name: Clans
+version: '${project.version}'
+main: de.clans.ClansPlugin
+api-version: '1.21'
+description: Clan-System komplett per GUI mit Custom-Icons
+softdepend: [PlaceholderAPI]
+commands:
+  clan:
+    description: Öffnet das Clan-Menü
+    usage: /clan
+    aliases: [clans]
+  cc:
+    description: Clan-Chat
+    usage: /cc <Nachricht>
+permissions:
+  clans.admin:
+    description: /clan reload
+    default: op
